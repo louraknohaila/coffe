@@ -1,0 +1,153 @@
+body {
+    background-image: url('background3.png');
+    background-size: cover;
+    overflow: hidden;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+body {
+    overflow: hidden;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.photo {
+    flex: 1;
+    width: 50px;
+}
+
+.img {
+    width: 90%;
+    border-radius: 15px;
+    position : relative;
+    bottom: 55px;
+}
+
+.content {
+    flex: 1;
+    text-align: center;
+}
+
+.title {
+    font-size: 2em;
+    color: rgb(16, 109, 16);
+    font-weight: 900;
+    margin-bottom: 10px;
+    position : relative;
+    left: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.subtitle {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(7, 68, 7);
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.photo1{
+    position : relative;
+    right :50px;
+}
+.photo2{
+    position : relative;
+    left :75px;
+   
+}
+
+.discount {
+    background-color: rgb(7, 68, 7);
+    color: rgb(235, 234, 234);
+    padding: 10px;
+    border-radius: 25px;
+    margin-bottom: 10px;
+}
+.discount:hover{
+    background-color: rgba(16, 131, 16, 0.945);
+    cursor: pointer;
+}
+
+.description {
+    color: rgba(0, 0, 0, 0.596);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.social-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: -110px;
+}
+.social-icon {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(16, 112, 16);
+    border-radius: 50%;
+    background-size:cover;
+    
+}
+.social-icon:hover{
+     background-color: rgba(16, 131, 16, 0.945);
+     cursor: pointer;
+
+}
+
+
+.f {
+         position : relative ;
+         right:-5px;
+         top:7px;
+ }
+.t {  
+    position : relative ;
+    right:-10px;
+    top:10px;
+ 
+}
+.i{ 
+    position : relative ;
+    right:-10px;
+    top:11px;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column; 
+    }
+
+    .photo {
+        width: 30px; 
+    }
+
+    .img {
+        bottom: 0; 
+    }
+
+    .title {
+        left: 0; 
+    }
+
+    .subtitle {
+        font-size: 1.2em; 
+    }
+
+    .photo1,
+    .photo2 {
+        position: static;
+        width: 50px; 
+    }
+
+    .social-container {
+        margin-top: 0;
+    }
+    
+   
+}
